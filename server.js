@@ -1,10 +1,11 @@
+app.listen(process.env.PORT || 5000);
 const express = require ('express');
 const app = express();
 const path = require('path');
 
-app.use(express.statiic(__dirname + '/dist/angular-tour-of-heroes'));
+app.use(express.static(__dirname + '/dist/angular-tour-of-heroes'));
 
-app.listen(process.env.PORT || 5000);
+
 
 //PathLocationStrategy
 
