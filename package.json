@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ng build --aot --target=production"
+    "keroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
